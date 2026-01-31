@@ -23,6 +23,3 @@ class Solution:
           idx += 1
         
         return longest
-  
-solution = Solution().longestCommonPrefix(["ab", "a"])
-print(solution)
