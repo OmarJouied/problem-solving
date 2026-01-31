@@ -47,6 +47,3 @@ class Solution:
           prev_char = char
 
         return result
-                
-solution = Solution().romanToInt("III")
-print(solution)
