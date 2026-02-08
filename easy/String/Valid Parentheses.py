@@ -13,6 +13,25 @@ class Solution:
         :type s: str
         :return: if the input string is valid or not.
         :rtype: bool
+
+        for ref:
+        class Solution:
+          def isValid(self, s: str) -> bool:
+              stack = []
+              for c in s:
+                  if c in "([{":
+                      stack.append(c)
+                  elif c in ")]}":
+                      if stack:
+                          openb = stack.pop()
+                          if (openb == "(" and c == ")") or (openb == "{" and c == "}") or (openb == "[" and c == "]") :
+                              continue
+                          else:
+                              return False
+                      else:
+                          return False
+              
+              return len(stack) == 0
         """""
         opening_count = 0
         prev_bracket = ""
