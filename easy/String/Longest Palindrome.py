@@ -1,13 +1,9 @@
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         """
-        Docstring for longestPalindrome
-        
-        :param self: Description
-        :param s: Description
-        :type s: str
-        :return: Description
-        :rtype: int
+        Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+
+        Letters are case sensitive, for example, "Aa" is not considered a palindrome.
         """
         chars = {}
         for char in s:
